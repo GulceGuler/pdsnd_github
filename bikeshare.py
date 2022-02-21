@@ -28,7 +28,7 @@ def get_filters():
     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs 
            
-    city = input ('Please enter the city name: ').lower()
+    city = input ('Dear user please enter one of the city names (New York City, Chicago, Wshington): ').lower()
     
     #handles invalid loops by accpeting only 3 city names and makes in case insensitive. This is done for all inputs
     while city not in ['chicago','new york city','washington']:
