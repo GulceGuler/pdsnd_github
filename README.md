@@ -5,7 +5,7 @@
 Bike Share Data Analysis
 
 ### Description
-We give detailed analysis of bike share data in various cities and provide a interactive way to learn more about it
+We give detailed analysis of bike share data for New York City, Chicago and Washington whereas providing an interactive way to do learn more about it the data
 
 ### Files used
 - bikeshare.py
