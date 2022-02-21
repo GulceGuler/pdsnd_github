@@ -29,7 +29,7 @@ def get_filters():
     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs 
            
-    city = input ('Please enter the city name: ').lower()
+    city = input ('Dear user please enter one of the city names (New York City, Chicago, Wshington): ').lower()
     
     #handles invalid loops by accpeting only 3 city names and makes in case insensitive. This is done for all inputs
     while city not in ['chicago','new york city','washington']:
@@ -74,13 +74,6 @@ def load_data(city, month, day):
         df = df[df['Start Time'].dt.month == months.index(month)]
     if days.index(day) != 7:
         df = df[df['Start Time'].dt.weekday == days.index(day)]
-    """
-    for i in range(len(city_data)):
-        start_time = datetime.datetime.strptime(city_data.loc[i,'Start Time'],'%Y-%m-%d %H:%M:%S')
-        if start_time.month == months.index(month) or months.index(month) == 0:
-            if start_time.weekday() == days.index(day) or days.index(day) == 7 :
-                df.append(city_data.loc[i])
-    """
     
     return df
 
