@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 import datetime 
+# This script reads locally provided data and prints out some analysis
 
 #Defining the variables for reading the files
 
